@@ -1,0 +1,102 @@
+{
+  "details": [
+    {
+      "name": "Rupal",
+      "email": "Rupalsaini20@gmail.com",
+      "phone": 6350039675,
+      "country": "Austraila",
+      "id": 6
+    },
+    {
+      "name": "Prateek",
+      "email": "prateek@gmail.com",
+      "phone": "8932289763",
+      "country": "USA",
+      "id": 8
+    },
+    {
+      "name": "manthannew",
+      "email": "manthan@dfdsf",
+      "phone": "234324",
+      "country": "india",
+      "id": 9
+    },
+    {
+      "name": "Navneet",
+      "email": "navneet@gmail.com",
+      "phone": "2321898",
+      "country": "Pak",
+      "id": 11
+    },
+    {
+      "name": "Bhanu",
+      "email": "bhanu@gmail.com",
+      "phone": "34342222",
+      "country": "Bharat",
+      "id": 13
+    },
+    {
+      "name": "Sumedha",
+      "email": "sumedha@gmail.com",
+      "phone": "12321442",
+      "country": "Afganisthan",
+      "id": 14
+    },
+    {
+      "name": "Ankur",
+      "email": "ankur@gmail.com",
+      "phone": "6543330987",
+      "country": "Germany",
+      "id": 15
+    },
+    {
+      "name": "NewData",
+      "email": "NewEmail",
+      "phone": "22222",
+      "country": "NewCountry",
+      "id": 16
+    },
+    {
+      "name": "tinku",
+      "email": "tinku@gmail.com",
+      "phone": "21233211",
+      "country": "BAngladesh",
+      "id": 17
+    },
+    {
+      "name": "tinku",
+      "email": "tinku@gmail.com",
+      "phone": "21233211",
+      "country": "BAngladesh",
+      "id": 19
+    },
+    {
+      "name": "sdasds",
+      "email": "asdasdasd",
+      "phone": "23e123",
+      "country": "asdasdasd",
+      "id": 20
+    },
+    {
+      "name": "sdasds",
+      "email": "asdasdasd",
+      "phone": "23e123",
+      "country": "asdasdasd",
+      "id": 21
+    },
+    {
+      "name": "Prateek",
+      "email": "prateek@gmail.com",
+      "phone": "8932289763",
+      "country": "USA",
+      "id": 22
+    },
+    {
+      "name": "Prateek",
+      "email": "prateek@gmail.com",
+      "phone": "8932289763",
+      "country": "USA",
+      "id": 23
+    }
+  ]
+}
