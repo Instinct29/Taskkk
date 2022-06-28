@@ -1,9 +1,7 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
-// import Axios from 'axios';
-
-import { getDataApi } from '../../service/apiRequestt';
-import { authhenticationApi } from '../../service/apiRequestt';
+import { loginUserr } from '../../service/apiRequestt';
+import { authenticationUser } from '../../service/apiRequestt';
 
 
 const Login = () => {
@@ -12,12 +10,12 @@ const Login = () => {
     password:""
   })
 
-  const [status, setStatus] = useState(false);
+const [status, setStatus] = useState(false);
 
 
 
   const handleChange =(e) =>{
-    const {name, value} = e.target.value
+    const {name, value} = e.target
     setValues((prevValues)=>{
       return{
         ...prevValues,
@@ -33,19 +31,20 @@ const Login = () => {
   }
 
   const loginUser = ()=>{
-        getDataApi({email:value.email, password:value.password}).then((res)=>{
-          if(!res.data.auth){
-           setStatus(false)
-          }else{
-           localStorage.setItem("token", res.data.token)
-           setStatus(true)
-           
-          }
-       })
+        loginUserr({email:value.email, password:value.password}).then((res)=>{
+        if(!res.data.auth){
+            setStatus(false)
+            console.log(res.data.auth,"should be true")
+        }else{
+         console.log("Token has been setted ")
+         setStatus(true)
+         localStorage.setItem("token", res.data.token)   
+        }
+     })
   }
 
   const userAuthenticated = ()=>{ 
-      authhenticationApi({headers : {
+    authenticationUser({headers : {
           "x-access-token": localStorage.getItem("token")
                                     }}).then((response)=>{
           console.log(response)
@@ -97,33 +96,3 @@ export default Login;
 
 
 
-  // const loginUser = ()=>{
-  //   Axios.post('http://localhost:3001/login',{
-  //     email:email,
-  //     password:password
-  //   }).then((res)=>{
-  //      if(!res.data.auth){
-  //       setStatus(false)
-  //      }else{
-  //       localStorage.setItem("token", res.data.token)
-  //       setStatus(true)
-        
-  //      }
-  //   })
-  // }
-
-
-
-
-
-
-
-
-    // const userAuthenticated = () => {
-  //   Axios.get("http://localhost:3001/isUserAuth", {headers : {
-  //          "x-access-token": localStorage.getItem("token")
-  //   }}).then((response)=>{
-  //     console.log(response)
-  //   })
-  //    navigate('/loggedIn')
-  // }

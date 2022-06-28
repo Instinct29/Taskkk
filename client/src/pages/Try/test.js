@@ -1,12 +1,12 @@
 import React from 'react'
-import { postData } from '../../service/apiRequestt'
-import { getData } from '../../service/apiRequestt'
+
 const Test = () => {
 
   const url = "http://localhost:3001/"
   const clickHandler = () =>{
       // postData({name:"try2",email:"email2@gmail.com",dob:"23-3-12",gender:"female",file:"File2211",password:"yo"})
-      getData({email:"pitu@gmail.com", password:"pitu"})
+      // getData({email:"pitu@gmail.com", password:"pitu"})
+      
   };
   
   return (
